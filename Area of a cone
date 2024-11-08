@@ -1,0 +1,11 @@
+import math
+
+def area_of_cone(radius, height):
+    slant_height = math.sqrt(radius**2 + height**2)
+    area = math.pi * radius * (radius + slant_height)
+    return area
+
+# Example usage
+radius = 5
+height = 12
+print("Area of the cone:", area_of_cone(radius, height))
