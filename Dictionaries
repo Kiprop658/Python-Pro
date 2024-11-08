@@ -1,0 +1,2 @@
+def sort_people_by_key(people, key):
+    return sorted(people, key=lambda x: x[key])
