@@ -1,0 +1,13 @@
+import math
+
+def cylinder_area(radius, height):
+    lateral_area = 2 * math.pi * radius * height
+    base_area = math.pi * radius ** 2
+    total_area = lateral_area + 2 * base_area
+    return total_area
+
+# Example usage
+radius = 5
+height = 10
+area = cylinder_area(radius, height)
+print(f"The total surface area of the cylinder is: {area}")
