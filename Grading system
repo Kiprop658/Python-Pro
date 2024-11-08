@@ -1,0 +1,21 @@
+def calculate_grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'
+
+def main():
+    scores = [95, 82, 67, 54, 88]
+    grades = {score: calculate_grade(score) for score in scores}
+    
+    for score, grade in grades.items():
+        print(f'Score: {score}, Grade: {grade}')
+
+if __name__ == "__main__":
+    main()
